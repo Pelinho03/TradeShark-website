@@ -1,0 +1,92 @@
+/**********************************/
+/* 1. Formulário
+/* 2. Endereços
+/* 3. Favoritos
+/**********************************/
+
+/**********************************/
+/* 0. Variáveis
+/**********************************/
+
+[data-theme="light"] {
+    --clr-location_tit: #000;
+    --clr-form_label: #e5e5e5;
+}
+
+[data-theme="dark"] {
+    --clr-location_tit: #85c9e3;
+    --clr-form_label: #fff;
+}
+
+/**********************************/
+/* 1. Formulário
+/**********************************/
+.form-container {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    height: 45px;
+}
+
+.form-input--text,
+select,
+textarea {
+    width: 100%;
+    background-color: var(--clr-form_label);
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+/**********************************/
+/* 2. Endereços
+/**********************************/
+
+.form-section {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.edit-block {
+    background-color: var(--clr-form_label);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: var(--transition);
+}
+
+button {
+    width: 100%;
+    background-color: #85c9e3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+button:hover {
+    background-color: var(--clr-btn-hover) !important;
+}
+
+/**********************************/
+/* 3. Favoritos
+/**********************************/
+.geral_product-card {
+    margin-bottom: 80px;
+}
+
+.fa-heart {
+    color: #85c9e3 !important;
+}

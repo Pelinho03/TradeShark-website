@@ -1,0 +1,154 @@
+/**********************************/
+/* 1. Formulário
+/* 2. Contactos
+/* 3. Localização
+/**********************************/
+
+/**********************************/
+/* 0. Variáveis
+/**********************************/
+
+[data-theme="light"] {
+    --clr-location_tit: #000;
+    --clr-form_label: #e5e5e5;
+}
+
+[data-theme="dark"] {
+    --clr-location_tit: #85c9e3;
+    --clr-form_label: #fff;
+}
+
+/**********************************/
+/* 1. Formulário
+/**********************************/
+.contact-form {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-text,
+.input-email,
+select,
+textarea {
+    width: 100%;
+    background-color: var(--clr-form_label);
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.contactos-selecione {
+    background-color: rgb(255, 255, 255) !important;
+    border: 1px solid #ccc !important;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 100%;
+    background-color: #85c9e3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+button:hover {
+    background-color: var(--clr-btn-hover) !important;
+}
+
+/**********************************/
+/* 2. Contactos
+/**********************************/
+.content-line {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 80px;
+    gap: 10px;
+}
+
+.info-block {
+    width: 45%;
+    height: 100%;
+    background-color: #85c9e3;
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.info-icon {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.info-icon i {
+    font-size: 30px;
+}
+
+.info-contact {
+    font-weight: 500;
+    font-size: 23px;
+    margin-bottom: 5px;
+}
+
+.info-departments {
+    font-size: 15px;
+    margin-bottom: 5px;
+    line-height: normal;
+}
+
+.additional-text {
+    color: #959595;
+    width: 45%;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/**********************************/
+/* 3. Localização
+/**********************************/
+.location-container {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.mapBox {
+    position: relative;
+    width: 66.666%;
+    height: 330px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.mapBox iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.location-info {
+    width: 33.333%;
+    float: left;
+    padding-left: 20px;
+}
+
+.location-info_titulo {
+    color: var(--clr-location_tit);
+}

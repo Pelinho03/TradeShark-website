@@ -1,0 +1,83 @@
+/**********************************/
+/* 1. Login
+/**********************************/
+
+.form-geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-geral_logo {
+    filter: var(--clr-logo);
+    transition: var(--transition);
+}
+
+.form-geral_campos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--clr-card);
+    box-shadow: var(--shadow-card);
+    border-radius: 10px;
+    width: 500px;
+    height: 410px;
+    padding: 20px;
+}
+
+.form-geral_campos form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.form-geral_campos input {
+    margin-top: 10px;
+    background-color: var(--clr-background);
+    padding-left: 10px;
+    color: var(--clr-font);
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 7px;
+}
+
+.form-geral_campos img {
+    width: 100px;
+    height: auto;
+}
+
+input::placeholder {
+    color: var(--clr-font);
+    font-size: 14px;
+}
+
+form [type="submit"] {
+    display: block;
+    background-color: var(--clr-link);
+    color: var(--clr-background);
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+form [type="submit"]:hover {
+    transition: var(--transition);
+    background-color: var(--clr-btn-hover);
+}
+
+.form-geral_titulo {
+    font: var(--ts-caption);
+    text-transform: uppercase;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}

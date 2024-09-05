@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-PT" data-theme="light">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TradeShark</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/loja.css" />
+    <link rel="stylesheet" href="css/artigo.css" />
+    <link rel="icon" href="assets/LOGO2.png" />
+</head>
+
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div class="container">
+
+      <!-- ...... -->
+      <!-- Navbar -->
+      <!-- ...... -->
+      <nav class="main-nav">
+        <a href="inicio.html">
+          <img src="assets/logo.svg" alt="TradeShark" class="logo">
+        </a>
+        <input type="text" class="search-bar" placeholder="Encontre tudo na Trade Shark">
+        <div class="icons">
+          <!-- Icon do utilizador -->
+          <div class="dropdown">
+            <button class="dropdown-btn">
+              <a class="dropdown-icon" href="#"><i class="fas fa-user-circle"></i></a>
+            </button>
+            <div class="dropdown-content">
+              <a href="perfil.html">Perfil</a>
+              <a href="#">Configurações</a>
+              <a href="login.html">Sair</a>
+            </div>
+          </div>
+          <!--Bt de trocar de ligh para dark mode-->
+          <div class="switch">
+            <div class="sol">
+              <i class="fas fa-sun"></i>
+            </div>
+            <span class="switch_track"></span>
+            <div class="lua">
+              <i class="fas fa-moon"></i>
+            </div>
+
+          </div>
+          <ul class="right-menu">
+            <li>
+              <a href="#" id="cart">
+                <text onclick=toggleCart() class="fa fa-shopping-cart">
+                </a>
+              </li>
+          </ul>
+
+        </div>
+      </nav>
+
+      <div class="container-dropdown">
+        <div class="shopping-cart">
+          <div class="shopping-cart-header">
+            <i class="fa fa-shopping-cart cart-icon"></i>
+            <div class="shopping-cart-total">
+              <span class="lighter-text">Total:</span>
+              <span class="main-color-text">2.229,97€</span>
+            </div>
+          </div> <!--end shopping-cart-header -->
+      
+          <ul class="shopping-cart-items">
+            <li class="clearfix">
+              <img src="assets/PANEL_FACHADA_FIJACIONES_OCULTAS.png" alt="item1" />
+              <span class="item-name">Pav. Flutuante</span>
+              <span class="item-price">849,99€</span>
+              <span class="item-quantity">Quantidade: 01</span>
+            </li>
+      
+            <li class="clearfix">
+              <img src="assets/Tinta-Plastica-Supercryl-1.png" alt="item1" />
+              <span class="item-name">Tintas de cor</span>
+              <span class="item-price">1.249,99€</span>
+              <span class="item-quantity">Quantidade: 01</span>
+            </li>
+      
+            <li class="clearfix">
+              <img src="assets/cimento-cimpor.png" alt="item1" />
+              <span class="item-name">Cimento</span>
+              <span class="item-price">129,99€</span>
+              <span class="item-quantity">Quantidade: 01</span>
+            </li>
+          </ul>
+      
+          <a href="checkout.html" class="button">Checkout</a>
+        </div> <!--end shopping-cart -->
+      </div>
+
+      <div class="bottom-bar">
+        <ul class="main-menu">
+          <li><a href="inicio.html">Início</a></li>
+          <li><a href="loja.html">Loja</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </div>
+
+        <!-- ....... -->
+        <!-- Produto -->
+        <!-- ....... -->
+            <div class="article">
+              <div class="article-img">
+                <img class="article-img--main" src="assets/pavimento.jpg" alt="">
+                <div class="additional-images">
+                    <img src="assets/pavimento.jpg" alt="">
+                    <img src="assets/pavimento.jpg" alt="">
+                    <img src="assets/pavimento.jpg" alt="">
+                </div>
+              </div>
+              <div class="article-info">
+                <h1>Pavimento flutuante</h1>
+                <p class="description">Laminado Artens Brits</p>
+                <p class="price">1.599,<small>99€</small></p>
+                <div class="quantity">
+                  <label for="quantity"></label>
+                  <input type="number" id="quantity" name="quantity" min="1" value="1">
+                  <button class="add-to-cart"><i class="fas fa-shopping-cart"></i> Adicionar</button>
+                  <button class="buy-now"><a href="checkout.html">Comprar Já</a></button>
+                </div>
+
+                <!-- ............. -->
+                <!-- Financiamento -->
+                <!-- ............. -->
+                <div id="financiamento" class="financing-section">
+                    <div class="financing-section-title">Financiamento</div>
+
+                    <div class="financing-option">
+                      <div class="financing-option-text">Nº de Meses</div>
+                      <select class="financing-form-control financing-select">
+                        <option value="6" data-price="168.49" rel="nofollow">6 Meses - Crédito com juros</option>
+                        <option value="10" data-price="102.79" rel="nofollow">10 Meses - Crédito com juros</option>
+                        <!-- ... Adicione outras opções conforme necessário ... -->
+                      </select>
+                    </div>
+                  
+                    <div class="financing-estimate">
+                      Mensalidade <span class="financing-price">168,49 €</span> <span class="financing-month">/Mês</span>
+                    </div>
+                  
+                    <div class="financing-text">
+                      Meses: <span id="financiamento-info-meses">6</span> | Mensalidade: <span id="financiamento-info-mensalidade">168,49 €</span> | Acresce Imposto selo (ISUC) <span id="financiamento-info-isuc">12,43 €</span> à 1ª mensalidade | MTIC: <span id="financiamento-info-mtic">1.023,37 €</span>
+                      <br><span class="financing-info-icon icon-info"></span><b> TAEG: <span id="financiamento-info-taeg">14.6</span>%.</b>
+                      <br><span class="financing-info-icon icon-info"></span><b> TAN: <span id="financiamento-info-tan">10,37</span>%.</b>
+                      <a href="/pt/apoio-ao-cliente/financiamento" target="_blank">Saiba mais <span class="icon-long-arrow-right"></span></a>
+                    </div>
+                  </div>
+                  
+              </div>
+            </div>
+
+            <!-- Adição da descrição completa e detalhes -->
+            <br>
+            <div class="article">
+                <div class="product-description">
+                  <h2>Características</h2>
+                  <p>Pavimento flutuante laminado Artens Brits que imita a madeira natural, fabricado em HDF com um acabamento cinzento-castanho. Recomendado para uso intensivo, adequado para quartos, salas de estar e cozinhas, bem como para utilização em lojas. É compatível com piso radiante a baixas temperaturas. Vendido em embalagens de 1,98 m². Possui o selo PEFC, que certifica que a madeira provém de florestas geridas de forma sustentável e que respeitam o meio ambiente. Garantia de 30 anos. Medidas: 19,2 x 12,9 x 0,8 cm (largura x comprimento x espessura).</p>
+                  <section class="product-specs">
+                    <br>
+                    <h3 class="specs-title">Características do Pavimento Flutuante Laminado Artens Brits</h3>
+                    <div class="specs-container">
+                      <table class="specs-table">
+                        <tr>
+                          <td><strong>Tipo de produto:</strong></td>
+                          <td>Pavimento flutuante laminado</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Marca do produto:</strong></td>
+                          <td>ARTENS</td>
+                        </tr>
+                        <!-- Adicione outras características conforme necessário -->
+                        <tr>
+                          <td><strong>Nível de qualidade:</strong></td>
+                          <td>Intenso</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Espessura total (em mm):</strong></td>
+                          <td>8</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Resistência à abrasão (Padrão AC):</strong></td>
+                          <td>AC5</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Família de cor:</strong></td>
+                          <td>Cinza / prateado</td>
+                        </tr>
+                        <!-- Adicione outras características conforme necessário -->
+                        <tr>
+                          <td><strong>Destino:</strong></td>
+                          <td>Quarto | Sala | Loja</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Tipo de colocação:</strong></td>
+                          <td>Flutuando</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Material principal:</strong></td>
+                          <td>HDF</td>
+                        </tr>
+                        <!-- Adicione outras características conforme necessário -->
+                        <tr>
+                          <td><strong>Certificação de madeira:</strong></td>
+                          <td>PEFC</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Produto etiqueta ecológica:</strong></td>
+                          <td>Rótulo ecológico europeu</td>
+                        </tr>
+                        <tr>
+                          <td><strong>País de fabricação:</strong></td>
+                          <td>Alemanha</td>
+                        </tr>
+                        <!-- Adicione outras características conforme necessário -->
+                        <tr>
+                          <td><strong>Garantia (em anos):</strong></td>
+                          <td>30</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Comprimento (em cm):</strong></td>
+                          <td>129.1</td>
+                        </tr>
+                        <tr>
+                          <td><strong>Largura (em cm):</strong></td>
+                          <td>19.2</td>
+                        </tr>
+                        <!-- Adicione outras características conforme necessário -->
+                        <tr>
+                          <td><strong>Conteúdo da embalagem (em m²):</strong></td>
+                          <td>1.98</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </section>
+              <br>
+                  <p>EAN: 1234567890</p>
+                  <p>Referência do Artigo: ABC123</p>
+                </div>
+              </div>
+
+        <!-- ...... -->
+        <!-- Footer -->
+        <!-- ...... -->
+        <footer class="site-footer">
+            <div class="footer-container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h6>Sobre</h6>
+                        <p class="text-justify">Na TradeShark.pt, somos alunos de Engenharia Informática apaixonados por inovação na indústria da construção.
+                            Oferecemos pacotes de artigos de construção a preços competitivos, permitindo que empresas economizem sem comprometer a qualidade.
+                            O nosso objetivo é impulsionar o crescimento das empresas, oferecendo oportunidades acessíveis para construir um futuro sólido e próspero para todos</p>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Membros</h6>
+                        <ul class="footer-links">
+                            <li><a href="#">Fábio</a></li>
+                            <li><a href="#">Fernando</a></li>
+                            <li><a href="#">João</a></li>
+                            <li><a href="#">José</a></li>
+                            <li><a href="#">Maksym</a></li>
+                            <li><a href="#">Paulo</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Links rápidos</h6>
+                        <ul class="footer-links">
+                            <li><a href="#">Sobre nós</a></li>
+                            <li><a href="#">Contactos</a></li>
+                            <li><a href="#">Políticas de privacidade</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; 2024 Todos os direitos reservados por
+                            <a href="#">TradeShark</a>.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></i></a></li>
+                            <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/scripts.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script></body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+/**********************************/
+/* 1. Artigo
+/* 2. Financiamento
+/* 3. Tabela (caracteristicas)
+/**********************************/
+
+/**********************************/
+/* 0. Variáveis
+/**********************************/
+
+[data-theme="light"] {
+    --clr-background: #f6f6f6;
+    --clr-add-bt: #194c83;
+    --clr-buy-bt: #85c9e3;
+    --clr-add-bt-hover: #85c9e3;
+    --clr-buy-bt-hover: #194c83;
+
+    --ff: "Cairo", sans-serif;
+    --ts-caption: 600 1.8rem/1 var(--ff);
+    --ts-normal-text: 400 1.6rem/1.4 var(--ff);
+    --ts-normal-semibold: 600 1.6rem/1.4 var(--ff);
+
+    --transition: all 0.2s linear;
+    --shadow-card: 5px 5px 30px 0 rgba(51, 51, 51, 15%);
+}
+
+[data-theme="dark"] {
+    --clr-background: #161616;
+    --clr-add-bt: #194c83;
+    --clr-buy-bt: #85c9e3;
+    --clr-add-bt-hover: #85c9e3;
+    --clr-buy-bt-hover: #194c83;
+
+    --ff: "Cairo", sans-serif;
+    --ts-caption: 600 1.8rem/1 var(--ff);
+    --ts-normal-text: 400 1.6rem/1.4 var(--ff);
+    --ts-normal-semibold: 600 1.6rem/1.4 var(--ff);
+
+    --transition: all 0.2s linear;
+    --shadow-card: 5px 5px 30px 0 rgba(221, 221, 221, 5%);
+}
+
+/**********************************/
+/* 1. Artigo
+/**********************************/
+p {
+    color: var(--clr-font);
+    transition: var(--transition);
+}
+
+.article {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: var(--clr-card);
+    transition: var(--transition);
+    border-radius: 10px;
+    box-shadow: var(--shadow-card);
+    width: 100% !important;
+}
+
+.article-img {
+    position: relative;
+    width: 50%;
+}
+
+.additional-images {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 100%;
+    width: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.additional-images img {
+    width: calc(33.33% - 5px);
+    height: auto;
+}
+
+.additional-images img:nth-child(1),
+.additional-images img:nth-child(2),
+.additional-images img:nth-child(3) {
+    width: calc(33.33% - 5px);
+}
+
+.article-img img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.article-info {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.article-info h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.description {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 1.875rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+small {
+    font-weight: 700;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.quantity label {
+    font-size: 16px;
+    color: #555;
+}
+
+.quantity input[type="number"] {
+    width: 70px;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.add-to-cart,
+.buy-now {
+    padding: 10px 48px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-to-cart {
+    background-color: var(--clr-add-bt);
+    transition: var(--transition);
+}
+
+.buy-now {
+    margin-left: 10px;
+    background-color: var(--clr-buy-bt);
+    transition: var(--transition);
+}
+
+.add-to-cart:hover {
+    background-color: var(--clr-add-bt-hover);
+}
+
+.buy-now:hover {
+    background-color: var(--clr-buy-bt-hover);
+}
+
+/**********************************/
+/* 2. Financiamento
+/**********************************/
+.financing-section {
+    border: 1px solid #e6e7e7;
+    border-radius: 8px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.financing-section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.financing-option {
+    margin-top: 20px;
+}
+
+.financing-option-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.financing-form-control {
+    display: inline-block;
+    width: auto;
+    height: 36px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #474a4e;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+.financing-estimate {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #007bff;
+}
+
+.financing-text {
+    font-size: 12px;
+    color: #848587;
+    margin-top: 20px;
+}
+
+.financing-text a {
+    color: #f16529;
+    text-decoration: none;
+}
+
+.financing-text a:hover {
+    text-decoration: underline;
+}
+
+/**********************************/
+/* 3. Tabela (caracteristicas)
+/**********************************/
+.product-description {
+    text-align: left;
+}
+
+.product-description h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-specs {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.specs-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.specs-container {
+    overflow-x: auto; /* Adiciona barra de rolagem horizontal se necessário */
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specs-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.specs-table strong {
+    font-weight: bold;
+}
+
+.specs-table tr:last-child td {
+    border-bottom: none; /* Remove a borda inferior da última linha */
+}

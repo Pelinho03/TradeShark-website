@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-PT" data-theme="light">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TradeShark</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/loja.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+    <link rel="icon" href="assets/LOGO2.png" />
+
+    <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+  </head>
+
+  <body>
+    <div class="menu-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+
+    <div class="container">
+
+      <!-- ...... -->
+      <!-- Navbar -->
+      <!-- ...... -->
+      <nav class="main-nav">
+        <a href="inicio.html">
+          <img src="assets/logo.svg" alt="TradeShark" class="logo">
+        </a>
+        <input type="text" class="search-bar" placeholder="Encontre tudo na Trade Shark">
+        <div class="icons">
+          <!-- Icon do utilizador -->
+          <div class="dropdown">
+            <button class="dropdown-btn">
+              <a class="dropdown-icon" href="#"><i class="fas fa-user-circle"></i></a>
+            </button>
+            <div class="dropdown-content">
+              <a href="perfil.html">Perfil</a>
+              <a href="#">Configurações</a>
+              <a href="login.html">Sair</a>
+            </div>
+          </div>
+          <!--Bt de trocar de ligh para dark mode-->
+          <div class="switch">
+            <div class="sol">
+              <i class="fas fa-sun"></i>
+            </div>
+            <span class="switch_track"></span>
+            <div class="lua">
+              <i class="fas fa-moon"></i>
+            </div>
+
+          </div>
+          <ul class="right-menu">
+            <li>
+              <a href="#" id="cart">
+                <text onclick=toggleCart() class="fa fa-shopping-cart">
+                </a>
+              </li>
+          </ul>
+
+        </div>
+      </nav>
+
+      <div class="container-dropdown">
+        <div class="shopping-cart">
+          <div class="shopping-cart-header">
+            <i class="fa fa-shopping-cart cart-icon"></i>
+            <div class="shopping-cart-total">
+              <span class="lighter-text">Total:</span>
+              <span class="main-color-text">2.229,97€</span>
+            </div>
+          </div> <!--end shopping-cart-header -->
+      
+          <ul class="shopping-cart-items">
+            <li class="clearfix">
+              <img src="assets/PANEL_FACHADA_FIJACIONES_OCULTAS.png" alt="item1" />
+              <span class="item-name">Pav. Flutuante</span>
+              <span class="item-price">849,99€</span>
+              <span class="item-quantity">Quantidade: 01</span>
+            </li>
+      
+            <li class="clearfix">
+              <img src="assets/Tinta-Plastica-Supercryl-1.png" alt="item1" />
+              <span class="item-name">Tintas de cor</span>
+              <span class="item-price">1.249,99€</span>
+              <span class="item-quantity">Quantidade: 01</span>
+            </li>
+      
+            <li class="clearfix">
+              <img src="assets/cimento-cimpor.png" alt="item1" />
+              <span class="item-name">Cimento</span>
+              <span class="item-price">129,99€</span>
+              <span class="item-quantity">Quantidade: 01</span>
+            </li>
+          </ul>
+      
+          <a href="checkout.html" class="button">Checkout</a>
+        </div> <!--end shopping-cart -->
+      </div>
+
+      <div class="bottom-bar">
+        <ul class="main-menu">
+          <li><a href="inicio.html">Início</a></li>
+          <li><a href="loja.html">Loja</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </div>
+
+      <!-- ........ -->
+      <!-- Checkout -->
+      <!-- ........ -->
+      <h1 class="product-card_tit">Checkout</h1>
+      <div class="tab_container">
+        <input id="tab1" type="radio" name="tabs">
+        <label for="tab1"><span class="numberCircle">1</span><span>Carrinho</span></label>
+
+        <input id="tab2" type="radio" name="tabs">
+        <label for="tab2"><span class="numberCircle">2</span><span>Informações do cliente</span></label>
+
+        <input id="tab3" type="radio" name="tabs">
+        <label for="tab3"><span class="numberCircle">3</span><span>Expedição</span></label>
+
+        <input id="tab4" type="radio" name="tabs" checked>
+        <label for="tab4"><span class="numberCircle">4</span><span>Pagamentos</span></label>
+
+
+        <section id="content1" class="tab-content">
+          <h3>Itens do carrinho</h3>
+          <p></p>
+        </section>
+
+        <section id="content2" class="tab-content">
+          <h3>Informações do cliente</h3>
+          <p></p>
+        </section>
+
+        <section id="content3" class="tab-content">
+          <h3>Expedição</h3>
+          <p></p>
+        </section>
+
+        <section id="content4" class="tab-content">
+          <h4 class="payment-title">Escolha o seu método de pagamento</h4>
+          <form action="" method="post">
+            <div class="pymt-radio">
+
+
+              <div class="row-payment-method payment-row">
+                <div class="select-icon">
+                  <input type="radio" id="radio1" name="radios" value="pp">
+                  <label for="radio1"></label>
+                </div>
+                <div class="select-txt">
+                  <p class="pymt-type-name">Paypal</p>
+                  <p class="pymt-type-desc">Pagamento seguro em linha. É necessário um cartão de crédito. Não é necessária uma conta PayPal.</p>
+                </div>
+                <div class="select-logo">
+                  <img src="assets/png/logo-paypal.png" alt="PayPal"/>
+                </div>
+
+              </div>
+
+            </div>
+            <div class="pymt-radio">
+
+              <div class="row-payment-method payment-row-last">
+                <div class="select-icon hr">
+                  <input type="radio" id="radio2" name="radios" value="pp" checked>
+                  <label for="radio2"></label>
+                </div>
+                <div class="select-txt hr">
+                  <p class="pymt-type-name">Cartão de crédito</p>
+                  <p class="pymt-type-desc">Transferência segura de dinheiro utilizando a sua conta bancária. Pagamento seguro online. Cartão de crédito necessário. Visa, Maestro, Discover, American Express.</p>                
+                </div>
+                <div class="select-logo">
+                  <div class="select-logo-sub logo-spacer">
+                    <img src="assets/png/logo-visa.png" alt="Visa"/>
+                  </div>
+                  <div class="select-logo-sub">
+                    <img src="assets/png/logo-mastercard.png" alt="MasterCard"/></div>
+                </div>
+
+              </div>
+            </div>
+            <div class="form-cc">
+              <div class="row-cc">
+                <div class="cc-field">
+                  <div class="cc-title">Número do cartão de crédito
+                  </div>
+                  <input type="text" class="input cc-txt text-validated" value="4542 9931 9292 2293" />
+                </div>
+              </div>
+              <div class="row-cc">
+                <div class="cc-field">
+                  <div class="cc-title">Data de validade
+                  </div>
+                  <select class="input cc-ddl">
+                    <option selected>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>          
+                  </select>
+                  <select class="input cc-ddl">
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option selected>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>            
+                  </select>
+                </div>
+                <div class="cc-field">
+                  <div class="cc-title">CVV<span class="numberCircle">?</span>
+                  </div>
+                  <input type="text" class="input cc-txt"/>
+                </div>
+              </div>
+              <div class="row-cc">
+                <div class="cc-field">
+                  <div class="cc-title">Nome do cartão
+                  </div>
+                  <input type="text" class="input cc-txt"/>
+                </div>
+              </div>    
+
+            </div>
+            <div class="button-master-container">
+              <div class="button-container"><a href="loja.html">Voltar às compras</a>
+              </div>
+              <div class="button-container button-finish"><a href="#">Finalizar pedido</a>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9223039768533617"
+     crossorigin="anonymous"></script>
+<!-- teste -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:1100px;height:90px"
+     data-ad-client="ca-pub-9223039768533617"
+     data-ad-slot="3834281108"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+      <!-- ...... -->
+      <!-- Footer -->
+      <!-- ...... -->
+      <footer class="site-footer">
+        <div class="footer-container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>Sobre</h6>
+              <p class="text-justify">Na TradeShark.pt, somos alunos de Engenharia Informática apaixonados por inovação na indústria da construção.
+                Oferecemos pacotes de artigos de construção a preços competitivos, permitindo que empresas economizem sem comprometer a qualidade.
+                O nosso objetivo é impulsionar o crescimento das empresas, oferecendo oportunidades acessíveis para construir um futuro sólido e próspero para todos</p>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+              <h6>Membros</h6>
+              <ul class="footer-links">
+                <li><a href="#">Fábio</a></li>
+                <li><a href="#">Fernando</a></li>
+                <li><a href="#">João</a></li>
+                <li><a href="#">José</a></li>
+                <li><a href="#">Maksym</a></li>
+                <li><a href="#">Paulo</a></li>
+              </ul>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+              <h6>Links rápidos</h6>
+              <ul class="footer-links">
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Contactos</a></li>
+                <li><a href="#">Políticas de privacidade</a></li>
+                <li><a href="#">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2024 Todos os direitos reservados por
+                <a href="#">TradeShark</a>.
+              </p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <ul class="social-icons">
+                <li><a class="facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    </footer>
+
+  <script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+
+</html>
