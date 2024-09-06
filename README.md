@@ -25,24 +25,40 @@ Aqui estão algumas das tecnologias e ferramentas utilizadas no projeto:
 
 -   **Página de Loja**: Listagem de artigos de construção disponíveis.
 
-![Produtos de Construção](./assets/homepage.png)
+    ![Produtos de Construção](./assets/homepage.png)
+
+---
 
 -   **Carrinho de Compras**: Adiciona, remove e faz checkout dos produtos selecionados.
 
-![Produtos de Construção](./assets/carrinho.png)
+    ![Carrinho de Compras](./assets/carrinho.png)
+
+---
+
+-   **Página de Checkout**: Processo de compra posterior à adição de artigos ao carrinho.
+
+    ![Página de Checkout](./assets/checkout.png)
+
+---
 
 -   **Gestão de Utilizadores**: Registo e login de utilizadores com contas personalizadas.
 
-![Produtos de Construção](./assets/login.png)
-![Produtos de Construção](./assets/registo.png)
+    <p align="center">
+      <img src="./assets/login.png" alt="Login" width="45%"/>
+      <img src="./assets/registo.png" alt="Registo" width="45%"/>
+    </p>
+
+---
 
 -   **Modo Escuro/Modo Claro**: Alterna entre modos de visualização para melhor conforto.
 
-![Produtos de Construção](./assets/homepage_darkmode.png)
+    ![Modo Escuro](./assets/homepage_darkmode.png)
+
+---
 
 -   **Página de Contactos**: Informação sobre a loja e métodos de contacto.
 
-## ![Produtos de Construção](./assets/contactos.png)
+    ![Contactos](./assets/contactos.png)
 
 ## 🎯 Objetivos do Projeto
 
