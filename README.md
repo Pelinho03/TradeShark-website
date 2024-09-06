@@ -25,19 +25,19 @@ Aqui estão algumas das tecnologias e ferramentas utilizadas no projeto:
 
 -   **Página de Loja**: Listagem de artigos de construção disponíveis.
 
-    ![Produtos de Construção](./assets/homepage.png)
+    <img src="./assets/homepage.png" alt="Produtos de Construção" width="70%"/>
 
 ---
 
 -   **Carrinho de Compras**: Adiciona, remove e faz checkout dos produtos selecionados.
 
-    ![Carrinho de Compras](./assets/carrinho.png)
+    <img src="./assets/carrinho.png" alt="Carrinho de Compras" width="70%"/>
 
 ---
 
 -   **Página de Checkout**: Processo de compra posterior à adição de artigos ao carrinho.
 
-    ![Página de Checkout](./assets/checkout.png)
+    <img src="./assets/checkout.png" alt="Página de Checkout" width="70%"/>
 
 ---
 
@@ -52,13 +52,15 @@ Aqui estão algumas das tecnologias e ferramentas utilizadas no projeto:
 
 -   **Modo Escuro/Modo Claro**: Alterna entre modos de visualização para melhor conforto.
 
-    ![Modo Escuro](./assets/homepage_darkmode.png)
+    <img src="./assets/homepage_darkmode.png" alt="Modo Escuro" width="70%"/>
 
 ---
 
 -   **Página de Contactos**: Informação sobre a loja e métodos de contacto.
 
-    ![Contactos](./assets/contactos.png)
+    <img src="./assets/contactos.png" alt="Página de Contactos" width="70%"/>
+
+---
 
 ## 🎯 Objetivos do Projeto
 
@@ -80,7 +82,7 @@ Aqui estão algumas das tecnologias e ferramentas utilizadas no projeto:
 
 ## 🛠️ Como Executar o Projeto
 
-1. **Clona o repositório**: `git clone https://github.com/Pelinho03/TradeShark.git`
+1. **Clona o repositório**: `git clone https://github.com/Pelinho03/TradeShark-website.git`
 2. **Configura o ambiente de desenvolvimento** com um servidor local (ex: XAMPP, WAMP).
 3. **Coloca os arquivos do projeto** na pasta do servidor local.
 4. **Acede ao site** através do navegador: `http://localhost/TradeShark/`.
@@ -102,5 +104,3 @@ Se tiveres sugestões ou melhorias, sente-te à vontade para abrir uma **issue**
 ---
 
 Feito por [Paulo Guimarães](https://github.com/Pelinho03)
-
----
