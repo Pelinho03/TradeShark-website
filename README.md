@@ -43,7 +43,27 @@ Aqui estão algumas das tecnologias e ferramentas utilizadas no projeto:
 
 ---
 
--   **Carrinho de Compras**: Adiciona, remove e faz checkout dos produtos selecionados.
+-   **Mais Vendidos**: Exibe os produtos mais vendidos na loja.
+
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+      <img src="./assets_img/maisvendidos1.png" alt="Modo Escuro" width="30%"/>
+      <img src="./assets_img/maisvendidos2.png" alt="Modo Escuro" width="30%"/>
+      <img src="./assets_img/maisvendidos3.png" alt="Modo Escuro" width="30%"/>
+    </div>
+
+---
+
+-   **Artigos**: Mostra os detalhes dos artigos disponíveis para compra.
+
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+      <img src="./assets_img/produto1.png" alt="Artigo" width="30%"/>
+      <img src="./assets_img/produto2.png" alt="Artigo" width="30%"/>
+      <img src="./assets_img/produto3.png" alt="Artigo" width="30%"/>
+    </div>
+
+---
+
+-   **Carrinho de Compras**: Permite adicionar, remover e finalizar a compra dos produtos selecionados.
 
     <div style="display: flex; justify-content: center;">
       <img src="./assets_img/carrinho.png" alt="Carrinho de Compras" width="80%"/>
@@ -51,7 +71,7 @@ Aqui estão algumas das tecnologias e ferramentas utilizadas no projeto:
 
 ---
 
--   **Página de Checkout**: Processo de compra posterior à adição de artigos ao carrinho.
+-   **Página de Checkout**: Processo de finalização de compra após a seleção dos produtos.
 
     <div style="display: flex; justify-content: center;">
       <img src="./assets_img/checkout.png" alt="Página de Checkout" width="80%"/>
@@ -59,21 +79,32 @@ Aqui estão algumas das tecnologias e ferramentas utilizadas no projeto:
 
 ---
 
--   **Gestão de Utilizadores**: Registo e login de utilizadores com contas personalizadas.
+-   **Gestão de Utilizadores**: Permite o registo e login de utilizadores, criando contas personalizadas.
 
     <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-      <img src="./assets_img/login.png" alt="Login" width="50%"/>
-      <img src="./assets_img/registo.png" alt="Registo" width="50%"/>
+      <img src="./assets_img/login.png" alt="Login" width="45%"/>
+      <img src="./assets_img/registo.png" alt="Registo" width="45%"/>
     </div>
 
 ---
 
--   **Página de Contactos**: Informação sobre a loja e métodos de contacto.
+-   **Página de Contactos**: Fornece informações sobre a loja e métodos de contacto.
 
     <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-      <img src="./assets_img/contactos1.png" alt="Página de Contactos" width="50%"/>
-      <img src="./assets_img/contactos2.png" alt="Página de Contactos" width="50%"/>
+      <img src="./assets_img/contactos1.png" alt="Página de Contactos" width="45%"/>
+      <img src="./assets_img/contactos2.png" alt="Página de Contactos" width="45%"/>
     </div>
+
+---
+
+-   **Dados do Utilizador**: Exibe informações pessoais e os favoritos de cada utilizador.
+
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+      <img src="./assets_img/dados1.png" alt="Página de Contactos" width="45%"/>
+      <img src="./assets_img/dados2.png" alt="Página de Contactos" width="45%"/>
+    </div>
+
+---
 
 ## 🎯 Objetivos do Projeto
 
