@@ -25,42 +25,55 @@ Aqui estão algumas das tecnologias e ferramentas utilizadas no projeto:
 
 -   **Página de Loja**: Listagem de artigos de construção disponíveis.
 
-    <img src="./assets/homepage.png" alt="Produtos de Construção" width="70%"/>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+      <img src="./assets_img/home1.png" alt="Produtos de Construção" width="30%"/>
+      <img src="./assets_img/home2.png" alt="Produtos de Construção" width="30%"/>
+      <img src="./assets_img/home3.png" alt="Produtos de Construção" width="30%"/>
+    </div>
 
 ---
 
 -   **Carrinho de Compras**: Adiciona, remove e faz checkout dos produtos selecionados.
 
-    <img src="./assets/carrinho.png" alt="Carrinho de Compras" width="70%"/>
+    <div style="display: flex; justify-content: center;">
+      <img src="./assets_img/carrinho.png" alt="Carrinho de Compras" width="50%"/>
+    </div>
 
 ---
 
 -   **Página de Checkout**: Processo de compra posterior à adição de artigos ao carrinho.
 
-    <img src="./assets/checkout.png" alt="Página de Checkout" width="70%"/>
+    <div style="display: flex; justify-content: center;">
+      <img src="./assets_img/checkout.png" alt="Página de Checkout" width="50%"/>
+    </div>
 
 ---
 
 -   **Gestão de Utilizadores**: Registo e login de utilizadores com contas personalizadas.
 
-    <p align="center">
-      <img src="./assets/login.png" alt="Login" width="45%"/>
-      <img src="./assets/registo.png" alt="Registo" width="45%"/>
-    </p>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+      <img src="./assets_img/login.png" alt="Login" width="45%"/>
+      <img src="./assets_img/registo.png" alt="Registo" width="45%"/>
+    </div>
 
 ---
 
 -   **Modo Escuro/Modo Claro**: Alterna entre modos de visualização para melhor conforto.
 
-    <img src="./assets/homepage_darkmode.png" alt="Modo Escuro" width="70%"/>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+      <img src="./assets_img/home1_dark.png" alt="Modo Escuro" width="30%"/>
+      <img src="./assets_img/home2_dark.png" alt="Modo Escuro" width="30%"/>
+      <img src="./assets_img/home3_dark.png" alt="Modo Escuro" width="30%"/>
+    </div>
 
 ---
 
 -   **Página de Contactos**: Informação sobre a loja e métodos de contacto.
 
-    <img src="./assets/contactos.png" alt="Página de Contactos" width="70%"/>
-
----
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+      <img src="./assets_img/contactos1.png" alt="Página de Contactos" width="45%"/>
+      <img src="./assets_img/contactos2.png.png" alt="Página de Contactos" width="45%"/>
+    </div>
 
 ## 🎯 Objetivos do Projeto
 
